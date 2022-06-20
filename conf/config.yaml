@@ -3,4 +3,4 @@ port: 9876
 interval: 10
 timeout: 3
 proxies:
-- twemproxy.namespace.svc.cluster.local:22222
+- localhost

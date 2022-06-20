@@ -1,5 +1,4 @@
-FROM ruby:2.5.3-slim
-MAINTAINER <jpantsjoha@gmail.com> 
+FROM ruby:2.5.9-slim
 
 # Metadata
 ENV \
@@ -20,5 +19,4 @@ RUN apt-get update -y && \
     chmod 755 $EXPORTER_APPDIR/bin/*
 
 USER $USER
-EXPOSE 9876
 CMD "/opt/twemproxy_exporter/bin/run.sh"
